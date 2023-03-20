@@ -1,0 +1,13 @@
+-- Git 설치 --
+PowerShell > " winget install --id Git.Git -e --source winget " 입력
+Windows의 경우 Git이 내장되어 있는 Terminal인 cmder 설치 -- https://cmder.app/
+
+-- Chocolatey 설치 (Windows Install Package)--
+ PowerShell > " Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) " 입력
+ 
+-- Chocolatey Install List --
+choco install vscode -y
+choco install notepadplusplus -y
+choco install googlechrome -y
+choco install bandizip -y
+choco install 7zip -y
