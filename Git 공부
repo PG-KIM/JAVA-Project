@@ -5,7 +5,15 @@
 git clone https://github.com/PG-KIM/JAVA-Project.git
 
 -- Git Server에 프로젝트 올리기 --
-git add "올릴 파일명1"
-git add "올릴 파일명2"
-git comit
-git push
+1. 변경이 있는 파일이 존재하는 디렉토리로 이동
+2. git config --global user.name 이름
+3. git config --global user.email 이메일 주소
+4. git config --list 로 확인 >> 종료해도 해당 디렉토리에서 config가 적용되어있음.
+5. git init >> .git 폴더 생성
+6. git status >> 변경 된 내역 확인 >> 브랜치(작업자명이라고 보면 됨) 명이 안맞으면 오류 뜸 >> git branch -m master main (master 브랜치 > main 브랜치으로 변경)
+7. git add . >> 변경 된 파일을 Staging에 올리기 ( . 은 현재 디렉토리를 의미)
+8. git commit -m "메세지 입력" >> staging에 올린것을 commit
+9. git remote add origin "Git Repository 주소" >> git remote add origin https://github.com/PG-KIM/JAVA-Project.git >> 로컬 repo, 서버 repo 연결
+10. git remote -v >> 별칭 내역을 확인
+11. git push origin main >> 서버 저장소, 로컬 저장소가 다르면 에러남 >> git pull origin main 을 통해서 상태를 같게 한 후에 push
+
